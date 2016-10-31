@@ -2,3 +2,33 @@ body{
     background-image: url("../img/conchitas.jpg");
     text-align: center;
 }
+nav a:hover {
+    color: black;
+    background: white;
+    padding: 10px;
+    padding-bottom:1px;
+}
+
+nav {
+    width: 900px;
+    margin: 0 auto; 
+     font-size: 2em;
+    padding: 5px;
+    padding-bottom:1px;
+}
+a:visited 
+{
+    color: black;
+    background: white;
+     font-size: 2em;
+    padding: 5px;
+    padding-bottom:1px;
+}
+
+a:link {
+    color: black;
+    background: white;
+     font-size: 2em;
+    padding: 5px;
+    padding-bottom:1px;
+}
