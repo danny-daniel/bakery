@@ -1,5 +1,5 @@
 <?php
-    include("../../includes/dbConnection.php");
+    include("../includes/dbConnection.php");
     session_start();
     
     $dbConn = getDatabaseConnection('bakery');
@@ -22,6 +22,30 @@
         {
             echo "<tr><td><input type='checkbox' name='cart[]'></td>";
             echo "<td>" .$bread['bread']. "</td> <td>" .$bread['price']. "</td></tr>";
+        }
+        
+        echo "</table>";
+        echo "</form>";
+    }
+    function getPastries()
+    {
+        global $dbConn;
+        
+        $sql = "SELECT * 
+                FROM pastries
+                ORDER BY name";
+            
+        $statement = $dbConn->prepare($sql);
+        $statement->execute();
+        $records = $statement->fetchAll(PDO::FETCH_ASSOC);
+        
+        echo "<form>";
+        echo "<table>";
+        
+        foreach ($records as $record)
+        {
+            echo "<tr><td><input type='checkbox' name='cart[]'></td>";
+            echo "<td>" .$record['name']. "</td> <td>" .$record['price']. "</td></tr>";
         }
         
         echo "</table>";
@@ -62,6 +86,9 @@
         <?php
             if (isset($_GET['submitRequest']) && $_GET['option'] == "Pan Dulce")
                 getPanDulce();
+            
+            if (isset($_GET['submitRequest']) && $_GET['option'] == "Pastries")
+                getPastries();
         ?>
     </body>
 </html>
