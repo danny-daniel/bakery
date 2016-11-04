@@ -1,5 +1,5 @@
 <?php
-    include("../includes/dbConnection.php");
+    include("../../includes/dbConnections.php");
     session_start();
     
     $dbConn = getDatabaseConnection('bakery');
@@ -51,6 +51,81 @@
         echo "</table>";
         echo "</form>";
     }
+    
+     function getDrinks()
+    {
+        global $dbConn;
+        
+        $sql = "SELECT * 
+                FROM drinks
+                ORDER BY name";
+            
+        $statement = $dbConn->prepare($sql);
+        $statement->execute();
+        $records = $statement->fetchAll(PDO::FETCH_ASSOC);
+        
+        echo "<form>";
+        echo "<table>";
+        
+        foreach ($records as $record)
+        {
+            echo "<tr><td><input type='checkbox' name='cart[]'></td>";
+            echo "<td>" .$record['name']. "</td> <td>" .$record['price']. "</td></tr>";
+        }
+        
+        echo "</table>";
+        echo "</form>";
+    }
+    function getSandwich()
+    {
+        global $dbConn;
+        
+        $sql = "SELECT * 
+                FROM sandwich
+                ORDER BY name";
+            
+        $statement = $dbConn->prepare($sql);
+        $statement->execute();
+        $records = $statement->fetchAll(PDO::FETCH_ASSOC);
+        
+        echo "<form>";
+        echo "<table>";
+        
+        foreach ($records as $record)
+        {
+            echo "<tr><td><input type='checkbox' name='cart[]'></td>";
+            echo "<td>" .$record['name']. "</td> <td>" .$record['price']. "</td></tr>";
+        }
+        
+        echo "</table>";
+        echo "</form>";
+    }
+    
+        function getVegetarian()
+    {
+        global $dbConn;
+        
+        $sql = "SELECT * 
+                FROM vegetarian
+                ORDER BY name";
+            
+        $statement = $dbConn->prepare($sql);
+        $statement->execute();
+        $records = $statement->fetchAll(PDO::FETCH_ASSOC);
+        
+        echo "<form>";
+        echo "<table>";
+        
+        foreach ($records as $record)
+        {
+            echo "<tr><td><input type='checkbox' name='cart[]'></td>";
+            echo "<td>" .$record['name']. "</td> <td>" .$record['price']. "</td></tr>";
+        }
+        
+        echo "</table>";
+        echo "</form>";
+    }
+    
 ?>
 
 <!DOCTYPE html>
@@ -80,6 +155,15 @@
             
             if (isset($_GET['submitRequest']) && $_GET['option'] == "Pastries")
                 getPastries();
+                
+            if (isset($_GET['submitRequest']) && $_GET['option'] == "Drinks")
+                getDrinks();
+                
+            if (isset($_GET['submitRequest']) && $_GET['option'] == "Sandwiches")
+                getSandwich();
+                
+            if (isset($_GET['submitRequest']) && $_GET['option'] == "Vegetarian")
+                getVegetarian();
         ?>
     </body>
 </html>
