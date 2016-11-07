@@ -1,5 +1,7 @@
 <?php
-    include("../../includes/dbConnections.php");
+
+    include("../includes/dbConnection.php");
+
     session_start();
     
     $dbConn = getDatabaseConnection('bakery');
@@ -21,7 +23,7 @@
         foreach ($pan as $bread)
         {
             echo "<tr><td><input type='checkbox' name='cart[]'></td>";
-            echo "<td>" .$bread['bread']. "</td> <td>" .$bread['price']. "</td></tr>";
+            echo "<td>" .$bread['bread']. "</td> <td>" .$bread['price']. "</td><td><img src='img/bread/".$bread['bread'].".jpg'/></td></tr>";
         }
         
         echo "</table>";
@@ -29,6 +31,7 @@
     }
     function getPastries()
     {
+        
         global $dbConn;
         
         $sql = "SELECT * 
@@ -45,7 +48,7 @@
         foreach ($records as $record)
         {
             echo "<tr><td><input type='checkbox' name='cart[]'></td>";
-            echo "<td>" .$record['name']. "</td> <td>" .$record['price']. "</td></tr>";
+            echo "<td>" .$record['name']. "</td><td>" .$record['price']. "</td><td><img src='img/pastries/" .$record['name'].".jpg'/></td></tr>";
         }
         
         echo "</table>";
@@ -135,6 +138,15 @@
         <link rel="stylesheet" href="css/project1.css" type="text/css" />
     </head>
     <body>
+        <nav>
+           <a href="menu.php"  >Menu </a>
+           &emsp;
+           <a href="location.php" > Location </a>
+           &emsp;
+           <a href="aboutUs.php" > About Us </a>
+       
+       </nav>
+       
         <form>
             Please choose from our wide selection: <select name="option">
                 <option>Choose one</option>
