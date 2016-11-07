@@ -7,14 +7,17 @@
     </head>
     <body>
         
-        <h1> <b> Welcome! </b></h1>
+        <h1> <b> Welcome to La Conchita! </b></h1>
         
-       <nav>
-           <a href="menu.php"  >Menu </a>
-           &emsp;
-           <a href="location.php" > Location </a>
-           &emsp;
-           <a href="aboutUs.php" > About Us </a>
+        
+    <nav>
+        <a href="index.php"  >Home </a>
+        &emsp;
+       <a href="menu.php"  >Menu </a>
+       &emsp;
+       <a href="location.php" > Location </a>
+       &emsp;
+       <a href="aboutUs.php" > About Us </a>
        
        </nav>
     

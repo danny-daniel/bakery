@@ -1,5 +1,5 @@
 body{
-    background-image: url("../img/conchitas.jpg");
+    background-image: url("../img/bg2.jpg");
     background-size: auto;
     text-align: center;
     font-size: 2em;
@@ -10,14 +10,33 @@ nav a:hover {
     background: white;
     padding: 10px;
     padding-bottom:1px;
+    
+    border-radius: 15px 50px;
+    background: #AA7243;
+    padding: 20px; 
+    width: 200px;
+    height: 150px;
+    text-align: center;
+    font: 2em;
 }
 
 nav {
     width: 900px;
     margin: 0 auto; 
-     font-size: 2em;
+    font-size: 2em;
     padding: 5px;
     padding-bottom:1px;
+    padding-left: ;
+    
+    
+    border-radius: 15px 50px;
+    background: #AA7243;
+    padding: 20px; 
+    width: 200px;
+    height: 150px;
+    text-align: center;
+    
+    
 }
 a:visited 
 {
@@ -26,6 +45,13 @@ a:visited
      font-size: 2em;
     padding: 5px;
     padding-bottom:1px;
+    
+    border-radius: 15px 50px;
+    background: #AA7243;
+    padding: 20px; 
+    width: 200px;
+    height: 150px;
+    text-align: center;
 }
 
 a:link {
@@ -34,6 +60,12 @@ a:link {
      font-size: 2em;
     padding: 5px;
     padding-bottom:1px;
+    
+    border-radius: 15px 50px;
+    background: #AA7243;
+    padding: 20px; 
+    width: 200px;
+    height: 150px;
 }
 table, tr, td
 {
@@ -43,4 +75,10 @@ table, tr, td
     padding: 10px;
     text-align: center;
     background-color: white;
+    
+    
+}
+b
+{
+    color:white;
 }
