@@ -1,5 +1,5 @@
 <?php
-    include("../includes/dbConnection.php");
+    include("../../includes/dbConnection.php");
     session_start();
     
     $dbConn = getDatabaseConnection('bakery');
@@ -21,7 +21,7 @@
         foreach ($pan as $bread)
         {
             echo "<tr><td><input type='checkbox' name='cart[]'></td>";
-            echo "<td>" .$bread['bread']. "</td> <td>" .$bread['price']. "</td></tr>";
+            echo "<td>" .$bread['bread']. "</td> <td>" .$bread['price']. "</td><td><img src='img/bread/".$bread['bread'].".jpg'/></td></tr>";
         }
         
         echo "</table>";
