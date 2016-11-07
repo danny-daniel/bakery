@@ -1,6 +1,6 @@
 <?php
 
-    include("../../includes/dbConnection.php");
+    include("../includes/dbConnection.php");
 
     session_start();
     
@@ -31,6 +31,7 @@
     }
     function getPastries()
     {
+        
         global $dbConn;
         
         $sql = "SELECT * 
@@ -47,7 +48,7 @@
         foreach ($records as $record)
         {
             echo "<tr><td><input type='checkbox' name='cart[]'></td>";
-            echo "<td>" .$record['name']. "</td> <td>" .$record['price']. "</td></tr>";
+            echo "<td>" .$record['name']. "</td><td>" .$record['price']. "</td><td><img src='img/pastries/" .$record['name'].".jpg'/></td></tr>";
         }
         
         echo "</table>";
