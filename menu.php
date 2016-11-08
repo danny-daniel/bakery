@@ -144,8 +144,7 @@
         <link rel="stylesheet" href="css/project1.css" type="text/css" />
     </head>
     <body>
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
+
 
         <nav>
            <a href="menu.php"  >Menu </a>
@@ -155,11 +154,7 @@
            <a href="aboutUs.php" > About Us </a>
        
        </nav>
-       
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
+
         
     <nav>
        <a href="menu.php"  >Menu </a>
