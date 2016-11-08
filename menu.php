@@ -145,6 +145,7 @@
     </head>
     <body>
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 
         <nav>
            <a href="menu.php"  >Menu </a>
@@ -155,6 +156,8 @@
        
        </nav>
        
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
         
