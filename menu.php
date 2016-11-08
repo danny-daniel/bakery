@@ -154,15 +154,6 @@
            <a href="aboutUs.php" > About Us </a>
        
        </nav>
-
-        
-    <nav>
-       <a href="menu.php"  >Menu </a>
-       &emsp;
-       <a href="location.php" > Location </a>
-       &emsp;
-       <a href="aboutUs.php" > About Us </a>
-       
     
     
         <form>
