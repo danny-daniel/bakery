@@ -5,8 +5,6 @@ body{
     font-size: 2em;
 
 }
-<<<<<<< HEAD
-=======
 /*nav a:hover {*/
     /*color: black;*/
     /*background: white;*/
@@ -38,7 +36,6 @@ nav {
     height: 5px;
     text-align: center;
 
->>>>>>> e25b133f1383d3fb64845f37c59d508a8b1810cc
 nav a:hover {
     color: black;
     background: white;
@@ -86,10 +83,7 @@ a:visited
     width: 200px;
     height: 150px;
     text-align: center;
-<<<<<<< HEAD
-=======
 
->>>>>>> e25b133f1383d3fb64845f37c59d508a8b1810cc
 }
 /*a:visited */
 /*{*/
@@ -107,10 +101,7 @@ a:visited
 /*    text-align: center;*/
 /*}*/
 
-<<<<<<< HEAD
-=======
 
->>>>>>> e25b133f1383d3fb64845f37c59d508a8b1810cc
 /*a:link {*/
 /*    color: black;*/
 /*    background: white;*/
@@ -138,10 +129,6 @@ a:link {
     width: 200px;
     height: 150px;
 }
-<<<<<<< HEAD
-=======
-
->>>>>>> e25b133f1383d3fb64845f37c59d508a8b1810cc
 table, tr, td
 {
     border-color: black;
