@@ -15,7 +15,7 @@
         
         if (isset($_GET['sort']))
             $sql = "SELECT * FROM Bread ORDER BY price";
-            
+          
         $statement = $dbConn->prepare($sql);
         $statement->execute();
         $pan = $statement->fetchAll(PDO::FETCH_ASSOC);
@@ -55,7 +55,7 @@
         foreach ($records as $record)
         {
             echo "<tr><td><input type='checkbox' name='cart[]'></td>";
-            echo "<td>" .$record['name']. "</td><td>" .$record['price']. "</td><td><img src='img/pastries/" .$record['name'].".jpg'/></td></tr>";
+            echo "<td>" .$record['name']. "</td><td>" .$record['price']. "</td><td><img src='img/pastries/".$record['name'].".jpg'/></td></tr>";
         }
         
         echo "</table>";
@@ -84,7 +84,7 @@
         foreach ($records as $record)
         {
             echo "<tr><td><input type='checkbox' name='cart[]'></td>";
-            echo "<td>" .$record['name']. "</td><td>" .$record['price']. "</td><td><img src='img/drinks/" .$record['name'].".jpg'/></td></tr>";
+            echo "<td>" .$record['name']. "</td><td>" .$record['price']. "</td><td><img src='img/drinks/".$record['name'].".jpg'/></td></tr>";
         }
         
         echo "</table>";
@@ -111,7 +111,7 @@
         foreach ($records as $record)
         {
             echo "<tr><td><input type='checkbox' name='cart[]'></td>";
-            echo "<td>" .$record['name']. "</td><td>" .$record['price']. "</td><td><img src='img/sandwiches/" .$record['name'].".jpg'/></td></tr>";
+            echo "<td>" .$record['name']. "</td><td>" .$record['price']. "</td><td><img src='img/sandwiches/".$record['name'].".jpg'/></td></tr>";
         }
         
         echo "</table>";
@@ -139,7 +139,7 @@
         foreach ($records as $record)
         {
             echo "<tr><td><input type='checkbox' name='cart[]'></td>";
-            echo "<td>" .$record['name']. "</td><td>" .$record['price']. "</td><td><img src='img/Vegetarian/" .$record['name'].".jpg'/></td></tr>";
+            echo "<td>" .$record['name']. "</td><td>" .$record['price']. "</td><td><img src='img/Vegetarian/".$record['name'].".jpg'/></td></tr>";
         }
         
         echo "</table>";
