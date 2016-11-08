@@ -56,13 +56,10 @@
         
         foreach ($records as $record)
         {
-<<<<<<< Updated upstream
-            echo "<tr><td><input type='checkbox' name='cart[]'></td>";
-            echo "<td>" .$record['name']. "</td><td>" .$record['price']. "</td><td><img src='img/pastries/".$record['name'].".jpg'/></td></tr>";
-=======
+
             echo "<tr><td>". "<input type='checkbox' name='cartt[]'   value =" . $record['name'] . "> </td>" ;
             echo "<td>" .$record['name']. "</td><td>" .$record['price']. "</td><td><img src='img/pastries/" .$record['name'].".jpg'/></td></tr>";
->>>>>>> Stashed changes
+
         }
         
         echo "</table>";
@@ -92,13 +89,10 @@
         
         foreach ($records as $record)
         {
-<<<<<<< Updated upstream
-            echo "<tr><td><input type='checkbox' name='cart[]'></td>";
-            echo "<td>" .$record['name']. "</td><td>" .$record['price']. "</td><td><img src='img/drinks/".$record['name'].".jpg'/></td></tr>";
-=======
+
             echo "<tr><td>". "<input type='checkbox' name='cartt[]'   value =" . $record['name'] . "> </td>" ;
             echo "<td>" .$record['name']. "</td><td>" .$record['price']. "</td><td><img src='img/drinks/" .$record['name'].".jpg'/></td></tr>";
->>>>>>> Stashed changes
+
         }
         
         echo "</table>";
@@ -126,13 +120,12 @@
         
         foreach ($records as $record)
         {
-<<<<<<< Updated upstream
+
             echo "<tr><td><input type='checkbox' name='cart[]'></td>";
             echo "<td>" .$record['name']. "</td><td>" .$record['price']. "</td><td><img src='img/sandwiches/".$record['name'].".jpg'/></td></tr>";
-=======
+
             echo "<tr><td>". "<input type='checkbox' name='cartt[]'   value =" . $record['name'] . "> </td>" ;
             echo "<td>" .$record['name']. "</td><td>" .$record['price']. "</td><td><img src='img/sandwiches/" .$record['name'].".jpg'/></td></tr>";
->>>>>>> Stashed changes
         }
         
         echo "</table>";
@@ -164,13 +157,13 @@
         
         foreach ($records as $record)
         {
-<<<<<<< Updated upstream
+
             echo "<tr><td><input type='checkbox' name='cart[]'></td>";
             echo "<td>" .$record['name']. "</td><td>" .$record['price']. "</td><td><img src='img/Vegetarian/".$record['name'].".jpg'/></td></tr>";
-=======
+
             echo "<tr><td>". "<input type='checkbox' name='cartt[]'   value =" . $record['name'] . "> </td>" ;
             echo "<td>" .$record['name']. "</td><td>" .$record['price']. "</td><td><img src='img/Vegetarian/" .$record['name'].".jpg'/></td></tr>";
->>>>>>> Stashed changes
+
         }
         
         echo "</table>";
