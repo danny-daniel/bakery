@@ -11,8 +11,11 @@
         global $dbConn;
         
         $sql = "SELECT * FROM
-            Bread ORDER BY bread";
+            Bread";
         
+        if (isset($_GET['nameSort']))
+            $sql = "SELECT * FROM Bread ORDER BY bread";
+            
         if (isset($_GET['sort']))
             $sql = "SELECT * FROM Bread ORDER BY price";
           
@@ -41,9 +44,11 @@
         global $dbConn;
         
         $sql = "SELECT * 
-                FROM pastries
-                ORDER BY name";
+                FROM pastries";
         
+        if (isset($_GET['nameSort']))
+            $sql = "SELECT * FROM pastries ORDER BY name";
+            
         if (isset($_GET['sort']))
             $sql = "SELECT * FROM pastries ORDER BY price";
             
@@ -74,9 +79,11 @@
         global $dbConn;
         
         $sql = "SELECT * 
-                FROM drinks
-                ORDER BY name";
+                FROM drinks";
         
+        if (isset($_GET['nameSort']))
+            $sql = "SELECT * FROM drinks ORDER BY name";
+            
         if (isset($_GET['sort']))
             $sql = "SELECT * FROM drinks ORDER BY price";
             
@@ -108,6 +115,9 @@
                 FROM sandwich
                 ORDER BY name";
         
+        if (isset($_GET['nameSort']))
+            $sql = "SELECT * FROM sandwich ORDER BY name";
+            
         if (isset($_GET['sort']))
             $sql = "SELECT * FROM sandwich ORDER BY price";   
             
@@ -145,6 +155,9 @@
                 FROM vegetarian
                 ORDER BY name";
         
+        if (isset($_GET['nameSort']))
+            $sql = "SELECT * FROM vegetarian ORDER BY name";
+            
         if (isset($_GET['sort']))
             $sql = "SELECT * FROM vegetarian ORDER BY price";    
             
@@ -214,6 +227,7 @@
                 <option>Vegetarian</option>
             </select>
             
+            Order Alphebetically: <input type="checkbox" name="nameSort">
             Order by price: <input type="checkbox" name="sort">
             <input type='submit' name='submitRequest' value="Get Foods">
             <!--<input type='submit' name = "addCartt" value ="Submit">-->
