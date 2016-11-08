@@ -1,27 +1,37 @@
 <?php
 session_start();
-print_r($_SESSION['cart']);
+print_r($_GET['cartt']);
 
+ if (!isset($_SESSION['cartt'])) {
+     $_SESSION['cartt'] = array();  //initializing session variable
+  }
+  
+    $cart = $_GET['cartt'];
+    
+    // foreach($cart as $element )
+    // {   
+    //     if (!in_array($element, $SESSION['cartt'])) { 
+    //   $_SESSION['cartt'][] = $element;
+    //     }
+    //       echo $element . "<br/>";
+    // }
+
+    echo "Your items: <br/>";
+    
+    foreach($_SESSION['cartt'] as $element ) {
+        echo $element . "<br/>";
+    }
 
 ?>
+
 <!DOCTYPE html>
 <html>
     <head>
-        <title> Shopping Cart </title>
-        <link rel="stylesheet" href="css/project1.css" type="text/css" />
+        <title>Your Cart</title>
     </head>
-    <body>
-                <h1> <b> La Conchita! </b></h1>
-        
-<ul class="topnav">
-  <li> <a href="index.php">Home </a> </li>
-   <li> <a href="menu.php">Menu </a>  </li>
-   <li> <a href="location.php" > Location </a> </li>
 
-    
-   <li> <a href="https://docs.google.com/a/csumb.edu/document/d/15Y2a8pX6osQWlWS9bxPRVzYsgM_ioskDdpTHeaWm_MQ/edit?usp=sharing">Our Story</a> </li>
-   <li> <a href="https://docs.google.com/a/csumb.edu/spreadsheets/d/1zmK0NZRVcsTlGi0fY6Sw-T0EkgshVkOJYEnP03SQSIs/edit?usp=sharing">Database schema</a> </li>
-
-</ul>
-    </body>
+<br />
+<form>
+<input type="submit" value="Check Out" />
+</form>
 </html>
