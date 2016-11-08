@@ -12,6 +12,9 @@
         
         $sql = "SELECT * FROM
             Bread ORDER BY bread";
+        
+        if (isset($_GET['sort']))
+            $sql = "SELECT * FROM Bread ORDER BY price";
             
         $statement = $dbConn->prepare($sql);
         $statement->execute();
@@ -38,6 +41,9 @@
         $sql = "SELECT * 
                 FROM pastries
                 ORDER BY name";
+        
+        if (isset($_GET['sort']))
+            $sql = "SELECT * FROM pastries ORDER BY price";
             
         $statement = $dbConn->prepare($sql);
         $statement->execute();
@@ -64,6 +70,9 @@
         $sql = "SELECT * 
                 FROM drinks
                 ORDER BY name";
+        
+        if (isset($_GET['sort']))
+            $sql = "SELECT * FROM drinks ORDER BY price";
             
         $statement = $dbConn->prepare($sql);
         $statement->execute();
@@ -88,6 +97,9 @@
         $sql = "SELECT * 
                 FROM sandwich
                 ORDER BY name";
+        
+        if (isset($_GET['sort']))
+            $sql = "SELECT * FROM sandwich ORDER BY price";   
             
         $statement = $dbConn->prepare($sql);
         $statement->execute();
@@ -113,6 +125,9 @@
         $sql = "SELECT * 
                 FROM vegetarian
                 ORDER BY name";
+        
+        if (isset($_GET['sort']))
+            $sql = "SELECT * FROM vegetarian ORDER BY price";    
             
         $statement = $dbConn->prepare($sql);
         $statement->execute();
@@ -171,6 +186,7 @@
                 <option>Vegetarian</option>
             </select>
             
+            Order by price: <input type="checkbox" name="sort">
             <input type='submit' name='submitRequest' value="Get Foods">
             <input type='submit' name = "addCart" value ="Submit">
             
