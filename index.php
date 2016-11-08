@@ -18,10 +18,6 @@
        <a href="location.php" > Location </a>
        &emsp;
        <a href="aboutUs.php" > About Us </a>
-<<<<<<< HEAD
-
-=======
->>>>>>> 9395bfad4c1e23293f4804b6a49f31c303a594a5
        
        </nav>
     

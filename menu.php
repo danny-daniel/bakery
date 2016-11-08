@@ -144,6 +144,7 @@
         <link rel="stylesheet" href="css/project1.css" type="text/css" />
     </head>
     <body>
+
         <nav>
            <a href="menu.php"  >Menu </a>
            &emsp;
@@ -153,8 +154,18 @@
        
        </nav>
        
+        
+    <nav>
+       <a href="menu.php"  >Menu </a>
+       &emsp;
+       <a href="location.php" > Location </a>
+       &emsp;
+       <a href="aboutUs.php" > About Us </a>
+       
+    
+    
         <form>
-            Please choose from our wide selection: <select name="option">
+            <h2> Please choose from our wide selection: <select name="option"> </h2>
                 <option>Choose one</option>
                 <option>Pan Dulce</option>
                 <option>Drinks</option>
@@ -167,6 +178,8 @@
             <input type='submit' name = "addCart" value ="Submit">
             
         </form>
+        
+        </nav>
         
         <?php
             if (isset($_GET['submitRequest']) && $_GET['option'] == "Pan Dulce")

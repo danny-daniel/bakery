@@ -5,6 +5,7 @@ body{
     font-size: 2em;
 
 }
+<<<<<<< Updated upstream
 /*nav a:hover {*/
     /*color: black;*/
     /*background: white;*/
@@ -37,6 +38,55 @@ nav {
     text-align: center;
     
     
+=======
+nav a:hover {
+    color: black;
+    background: white;
+    padding: 10px;
+    padding-bottom:1px;
+    
+    border-radius: 15px 50px;
+    background: #AA7243;
+    padding: 20px; 
+    width: 200px;
+    height: 150px;
+    text-align: center;
+    font: 2em;
+}
+
+nav {
+    width: 900px;
+    margin: 0 auto; 
+    font-size: 2em;
+    padding: 5px;
+    padding-bottom:1px;
+    padding-left: ;
+    
+    
+    border-radius: 15px 50px;
+    background: #AA7243;
+    padding: 20px; 
+    width: 200px;
+    height: 150px;
+    text-align: center;
+    
+    
+}
+a:visited 
+{
+    color: black;
+    background: white;
+     font-size: 2em;
+    padding: 5px;
+    padding-bottom:1px;
+    
+    border-radius: 15px 50px;
+    background: #AA7243;
+    padding: 20px; 
+    width: 200px;
+    height: 150px;
+    text-align: center;
+>>>>>>> Stashed changes
 }
 /*a:visited */
 /*{*/
@@ -54,6 +104,7 @@ nav {
 /*    text-align: center;*/
 /*}*/
 
+<<<<<<< Updated upstream
 /*a:link {*/
 /*    color: black;*/
 /*    background: white;*/
@@ -67,6 +118,21 @@ nav {
 /*    width: 20px;*/
 /*    height: 15px;*/
 /*}*/
+=======
+a:link {
+    color: black;
+    background: white;
+     font-size: 2em;
+    padding: 5px;
+    padding-bottom:1px;
+    
+    border-radius: 15px 50px;
+    background: #AA7243;
+    padding: 20px; 
+    width: 200px;
+    height: 150px;
+}
+>>>>>>> Stashed changes
 table, tr, td
 {
     border-color: black;
