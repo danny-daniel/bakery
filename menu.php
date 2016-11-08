@@ -28,6 +28,7 @@
         
         echo "</table>";
         echo "</form>";
+        
     }
     function getPastries()
     {
@@ -53,6 +54,7 @@
         
         echo "</table>";
         echo "</form>";
+        
     }
     
      function getDrinks()
@@ -128,7 +130,11 @@
         echo "</table>";
         echo "</form>";
     }
-    
+    function addToCart(){
+        if(isset($_GET['addCart'])){
+            header("Location: shoppingCart.php");
+        }
+    }
 ?>
 
 <!DOCTYPE html>
@@ -158,6 +164,7 @@
             </select>
             
             <input type='submit' name='submitRequest' value="Get Foods">
+            <input type='submit' name = "addCart" value ="Submit">
             
         </form>
         
@@ -176,6 +183,8 @@
                 
             if (isset($_GET['submitRequest']) && $_GET['option'] == "Vegetarian")
                 getVegetarian();
+            if(isset($_GET['addCart']))
+                addToCart();
         ?>
     </body>
 </html>
