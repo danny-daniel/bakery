@@ -5,7 +5,6 @@ body{
     font-size: 2em;
 
 }
-<<<<<<< Updated upstream
 /*nav a:hover {*/
     /*color: black;*/
     /*background: white;*/
@@ -36,9 +35,7 @@ nav {
     width: 10px;
     height: 5px;
     text-align: center;
-    
-    
-=======
+
 nav a:hover {
     color: black;
     background: white;
@@ -86,7 +83,7 @@ a:visited
     width: 200px;
     height: 150px;
     text-align: center;
->>>>>>> Stashed changes
+
 }
 /*a:visited */
 /*{*/
@@ -104,7 +101,7 @@ a:visited
 /*    text-align: center;*/
 /*}*/
 
-<<<<<<< Updated upstream
+
 /*a:link {*/
 /*    color: black;*/
 /*    background: white;*/
@@ -118,7 +115,7 @@ a:visited
 /*    width: 20px;*/
 /*    height: 15px;*/
 /*}*/
-=======
+
 a:link {
     color: black;
     background: white;
@@ -132,7 +129,7 @@ a:link {
     width: 200px;
     height: 150px;
 }
->>>>>>> Stashed changes
+
 table, tr, td
 {
     border-color: black;
